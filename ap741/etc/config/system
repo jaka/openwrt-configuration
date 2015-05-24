@@ -1,0 +1,9 @@
+
+config system
+  option hostname 'tlwr741-ap1'
+  option timezone 'CET-1CEST,M3.5.0,M10.5.0/3'
+
+config timeserver 'ntp'
+  list server '193.2.4.6'
+  option enabled '1'
+  option enable_server '0'
