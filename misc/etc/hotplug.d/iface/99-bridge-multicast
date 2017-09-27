@@ -1,0 +1,4 @@
+[ "$ACTION" = "ifup" ] || exit 0
+[ -d "/sys/devices/virtual/net/$DEVICE/bridge" ] || exit 0
+
+echo 0 >"/sys/devices/virtual/net/$DEVICE/bridge/multicast_snooping"
